@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --fuente-letra: "Lora", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{ 
+    box-sizing: border-box;
+    background-image: url('/Curriculum/assets/hexagonal.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+.header{
+    padding: 2% 0% 0% 15% ;
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link{
+    font-family: var(--fuente-letra);
+    font-size: 24px;
+    font-weight: 600;
+    color: #003344;
+    text-decoration: none;
+}
+
+.antecedentes{
+    display: flex;
+    padding: 3% 23%;
+}
+
+.antecedentes_contenido{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.antecedentes_laborales{
+    font-size: 36px;
+    font-family: var(--fuente-letra);
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 700;    
+}
+
+.antecedentes_laborales_descripcion{
+    font-size: 24px;
+    font-family: var(--fuente-letra);
+    text-align: justify;
+    font-style: italic;
+}
+
+
+
+
+
+
+.footer{
+    background-color: #003344;
+    padding: 24px;
+}
