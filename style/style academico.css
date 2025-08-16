@@ -46,7 +46,7 @@ body{
     gap: 40px;
 }
 
-.antecedentes_laborales{
+.antecedentes_academico{
     font-size: 36px;
     font-family: var(--fuente-letra);
     text-decoration: underline;
@@ -54,19 +54,20 @@ body{
     font-weight: 700;    
 }
 
-.antecedentes_laborales_descripcion{
+.antecedentes_academico_descripcion{
     font-size: 24px;
     font-family: var(--fuente-letra);
     text-align: justify;
     font-style: italic;
 }
 
-
-
-
-
-
 .footer{
     background-color: #003344;
     padding: 24px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
