@@ -18,11 +18,17 @@ body{
 
 .header{
     padding: 2% 0% 0% 15% ;
+    display: flex;    
+    align-items: center;
+    overflow: visible;    
 }
 
 .header_menu{
     display: flex;
-    gap: 80px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
 }
 
 .header_menu_link{
@@ -61,12 +67,27 @@ body{
     font-style: italic;
 }
 
-
-
-
-
-
 .footer{
     background-color: #003344;
     padding: 24px;
+}
+
+@media (max-width: 768px) {
+    .header{
+        padding: 10%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+
+    .antecedentes{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .antecedentes_contenido{
+        width: auto;
+        text-align: center;
+        height: auto;
+    }
 }

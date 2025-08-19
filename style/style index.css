@@ -4,7 +4,6 @@
     --fuente-letra: "Lora", sans-serif;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -20,11 +19,17 @@ body{
 
 .header{
     padding: 2% 0% 0% 15% ;
+    display: flex;    
+    align-items: center;
+    overflow: visible;    
 }
 
 .header_menu{
     display: flex;
-    gap: 80px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
 }
 
 .header_menu_link{
@@ -40,6 +45,7 @@ body{
     align-items: center;
     padding: 7% 18%;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .presentacion_contenido{
@@ -100,8 +106,47 @@ body{
     background-color: #d0fafa;
 }
 
+.presentacion_imagen{
+   max-width: 300px;
+   height: auto;
+   width: 50%;
+   border: 1px solid #003344;
+   border-radius: 4px;
+   padding: 5px; 
+}
+
 .footer{
     background-color: #003344;
     padding: 24px;
 }
 
+@media (max-width: 768px) {
+    .header{
+        padding: 10%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+    }
+    .presentacion_imagen,
+    .presentacion_contenido{
+        width: auto;
+        text-align: center;
+        height: auto;
+    }
+    .enlaces{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .enlaces_link{
+        width: 90%;
+        font-size: 22px;
+        padding: 18px 0;
+    }
+}
